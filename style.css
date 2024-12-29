@@ -82,13 +82,6 @@ main {
   object-fit: contain;
 }
 
-.social-logo2 {
-  width: 80px;
-  height: 80px;
-  max-width: 100%;
-  object-fit: contain;
-}
-
 .social-link span {
   display: block;
   margin-top: 1px;
@@ -96,8 +89,23 @@ main {
 }
 
 .contact-section {
-  margin: 90px auto;
+  margin-top: 90px auto;
+  margin-bottom: 40px auto;
   a {color: white};
+}
+
+.social-links2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.social-logo2 {
+  width: 70px;
+  height: 70px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 footer {
@@ -134,8 +142,13 @@ footer nav a:hover {
   }
 
   .social-logo {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-logo2 {
+  width: 50px;
+  height: 50px;
   }
 }
 
@@ -143,10 +156,5 @@ footer nav a:hover {
   .logo {
     max-width: 90%;
     max-height: 120px;
-  }
-
-  footer nav a {
-    display: block;
-    margin: 5px 0;
   }
 }
