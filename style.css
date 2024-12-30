@@ -49,10 +49,18 @@ main {
   max-height: 191px;
 }
 
+#onas {
+  margin-top: 70px;
+}
+
 .description {
   margin: 20px auto;
   max-width: 640px;
   text-align: left;
+}
+
+#folio {
+  margin-top: 110px;
 }
 
 .slinks {
@@ -80,29 +88,56 @@ main {
 }
 
 .slink span {
+  font-size: 1.4em;
   display: block;
   margin-top: 1px;
 }
 
-#onas {
-  margin-top: 60px;
-}
-
-#folio {
-  margin-top: 90px;
-}
-
-.contact-section {
+.kontakto {
   margin-top: 120px;
-  margin-bottom: 40px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin-top: 10px;
+  margin-bottom: 80px;
   a {color: white};
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.contact-item svg {
+  width: 40px;
+  height: 40px;
+  fill: #f68425;
+}
+
+.contact-item span {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.contact-item a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
 }
 
 .slinks2 {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  margin: 40px 0;
+  gap: 50px;
+  margin: 10px 0;
 }
 
 .slogo2 {
