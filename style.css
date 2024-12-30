@@ -102,7 +102,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 80px;
-  margin-top: 10px;
   margin-bottom: 80px;
   a {color: white};
 }
@@ -181,9 +180,28 @@ footer nav a:hover {
     padding: 0 30px;
   }
 
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 30px;
+  }
+
+  .contact-item {
+    display: flex;
+    align-items: left;
+    gap: 20px;
+  }
+
+  .contact-item span {
+    font-size: 1.1em;
+  }
+
   .slinks {
     flex-direction: column;
-    gap: 15px;
+    gap: 40px;
   }
 
   .slogo {
