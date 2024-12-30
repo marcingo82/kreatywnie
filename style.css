@@ -55,31 +55,31 @@ main {
   text-align: left;
 }
 
-.social-links {
+.slinks {
   display: flex;
   justify-content: center;
   gap: 40px;
   margin: 30px 0;
 }
 
-.social-link {
+.slink {
   text-align: center;
   color: #fff;
   text-decoration: none;
 }
 
-.social-link:hover span {
+.slink:hover span {
   text-decoration: underline;
 }
 
-.social-logo {
+.slogo {
   width: 100px;
   height: 100px;
   max-width: 100%;
   object-fit: contain;
 }
 
-.social-link span {
+.slink span {
   display: block;
   margin-top: 1px;
 }
@@ -98,14 +98,14 @@ main {
   a {color: white};
 }
 
-.social-links2 {
+.slinks2 {
   display: flex;
   justify-content: center;
   gap: 40px;
   margin: 40px 0;
 }
 
-.social-logo2 {
+.slogo2 {
   width: 70px;
   height: 70px;
   max-width: 100%;
@@ -146,17 +146,17 @@ footer nav a:hover {
     padding: 0 30px;
   }
 
-  .social-links {
+  .slinks {
     flex-direction: column;
     gap: 15px;
   }
 
-  .social-logo {
+  .slogo {
     width: 100px;
     height: 100px;
   }
   
-  .social-logo2 {
+  .slogo2 {
   width: 70px;
   height: 70px;
   }
