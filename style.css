@@ -85,7 +85,6 @@ main {
 .social-link span {
   display: block;
   margin-top: 1px;
-  font-size: 14px;
 }
 
 .contact-section {
@@ -111,6 +110,7 @@ main {
 footer {
   background-color: #101010;
   padding: 10px 0;
+  font-size: 14px;
 }
 
 footer nav a {
@@ -149,6 +149,10 @@ footer nav a:hover {
   .social-logo2 {
   width: 70px;
   height: 70px;
+  }
+  
+  footer {
+	  font-size: 12px;
   }
 }
 
