@@ -151,7 +151,7 @@ footer nav a:hover {
 
 @media (max-width: 480px) {
   .logo {
-    max-width: 90%;
+    max-width: 84%;
     max-height: 120px;
   }
 }
