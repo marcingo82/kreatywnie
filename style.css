@@ -1,6 +1,6 @@
 * {
   margin: 0;
-  padding: 0;
+/*   padding: 0; */
   box-sizing: border-box;
 }
 
@@ -63,34 +63,122 @@ main {
   margin-top: 110px;
 }
 
-.slinks {
+.hidden {
+  display: none;
+}
+
+.button-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 12px;
   margin: 30px 0;
 }
 
-.slink {
+.button {
+  display: block;
+  width: 180px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.5s ease;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.08);
+}
+
+.button:nth-child(1) {
+  background-image: url("gfx/obr1f.jpg");
+  animation: slideshow-f 9s infinite;
+  animation-delay: 3s;
+}
+
+.button:nth-child(2) {
+  background-image: url("gfx/obr1s.jpg");
+  animation: slideshow-s 9s infinite;
+  animation-delay: 5s;
+}
+
+.button:nth-child(3) {
+  background-image: url("gfx/obr1i.jpg");
+  animation: slideshow-i 9s infinite;
+  animation-delay: 7s;
+}
+
+.button:nth-child(4) {
+  background-image: url("gfx/obr1t.jpg");
+  animation: slideshow-t 9s infinite;
+  animation-delay: 9s;
+}
+
+.button:nth-child(1)::after {
+  content: "Filmy";
+}
+
+.button:nth-child(2)::after {
+  content: "Spoty";
+}
+
+.button:nth-child(3)::after {
+  content: "Eventy";
+}
+
+.button:nth-child(4)::after {
+  content: "Teledyski";
+}
+
+.button:nth-child(1)::after,
+.button:nth-child(2)::after,
+.button:nth-child(3)::after,
+.button:nth-child(4)::after {
+  display: block;
+  font-size: 1.4em;
   text-align: center;
+  margin-top: 110px;
   color: #fff;
   text-decoration: none;
 }
 
-.slink:hover span {
+.button:nth-child(1):hover::after,
+.button:nth-child(2):hover::after,
+.button:nth-child(3):hover::after,
+.button:nth-child(4):hover::after {
   text-decoration: underline;
+  color: #fff;
 }
 
-.slogo {
-  width: 100px;
-  height: 100px;
-  max-width: 100%;
-  object-fit: contain;
+@keyframes slideshow-f {
+  0%, 15% { background-image: url("gfx/obr1f.jpg"); opacity: 1; }
+  15%, 30% { background-image: url("gfx/obr2f.jpg"); opacity: 1; }
+  30%, 45% { background-image: url("gfx/obr3f.jpg"); opacity: 1; }
+  45%, 55% { background-image: url("gfx/obr4f.jpg"); opacity: 1; }
+  55%, 100% { background-image: url("gfx/obr1f.jpg"); opacity: 1; }
 }
 
-.slink span {
-  font-size: 1.4em;
-  display: block;
-  margin-top: 1px;
+@keyframes slideshow-s {
+  0%, 15% { background-image: url("gfx/obr1s.jpg"); opacity: 1; }
+  15%, 30% { background-image: url("gfx/obr2s.jpg"); opacity: 1; }
+  30%, 45% { background-image: url("gfx/obr3s.jpg"); opacity: 1; }
+  45%, 55% { background-image: url("gfx/obr4s.jpg"); opacity: 1; }
+  55%, 100% { background-image: url("gfx/obr1s.jpg"); opacity: 1; }
+}
+
+@keyframes slideshow-i {
+  0%, 15% { background-image: url("gfx/obr1i.jpg"); opacity: 1; }
+  15%, 30% { background-image: url("gfx/obr2i.jpg"); opacity: 1; }
+  30%, 45% { background-image: url("gfx/obr3i.jpg"); opacity: 1; }
+  45%, 55% { background-image: url("gfx/obr4i.jpg"); opacity: 1; }
+  55%, 100% { background-image: url("gfx/obr1i.jpg"); opacity: 1; }
+}
+
+@keyframes slideshow-t {
+  0%, 15% { background-image: url("gfx/obr1t.jpg"); opacity: 1; }
+  15%, 30% { background-image: url("gfx/obr2t.jpg"); opacity: 1; }
+  30%, 45% { background-image: url("gfx/obr3t.jpg"); opacity: 1; }
+  45%, 55% { background-image: url("gfx/obr4t.jpg"); opacity: 1; }
+  55%, 100% { background-image: url("gfx/obr1t.jpg"); opacity: 1; }
 }
 
 .kontakto {
@@ -179,6 +267,13 @@ footer nav a:hover {
   .description-autor {
     padding: 0 30px;
   }
+  
+  .button-container {
+    flex-direction: column;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+  }
 
   .contact-container {
     display: flex;
@@ -197,16 +292,6 @@ footer nav a:hover {
 
   .contact-item span {
     font-size: 1.1em;
-  }
-
-  .slinks {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .slogo {
-    width: 100px;
-    height: 100px;
   }
   
   .slogo2 {
