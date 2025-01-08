@@ -269,7 +269,7 @@ footer nav a:hover {
   
   .logo-anim {
     max-width: 84%;
-    max-height: 100px;
+    max-height: 120px;
     left: 40px;
     top: 0px;
   }
@@ -329,10 +329,9 @@ footer nav a:hover {
 
 @media (max-width: 480px) {
   .logo-anim {
-    max-width: 22%;
-    max-height: 100%;
+    max-width: 86%;
+    max-height: 120px;
     left: 30px;
-    top: 0px;
   }
 
   .logo {
